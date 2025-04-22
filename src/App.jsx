@@ -224,9 +224,9 @@ return(
 
 <input type="text" value={name} onChange={(e) => setPara(e.target.value)} placeholder='Enter firstname name' />
 
-<button onClick={next}>click</button>
+<button onClick={next} id='btn'>click</button>
 
-<button onClick={Delete}>Delete</button>
+<button onClick={Delete}   id='btn2'>Delete</button>
 
 
 <h2>{btn}</h2>

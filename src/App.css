@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+input[type="text"] {
+  background-color: wheat;
+  height: 37px;
+  gap: 20px;
+  width: 232px;
+  color: black;
+}button#btn {
+  background-color: #cc1d1d;
+  margin: 11px;
+  font-size: 20px;
+}
