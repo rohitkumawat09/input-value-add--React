@@ -109,88 +109,86 @@
 
 
 
-import { useState } from 'react'
+// import { useState } from 'react'
 
-import './App.css'
-function App() {
+// import './App.css'
+// function App() {
 
-    const [name, setPara] = useState("")
-    const [btn, setPara2] = useState("")
-    function next(e) {
+//     const [name, setPara] = useState("")
+//     const [btn, setPara2] = useState("")
+//     function next(e) {
 
    
-        e.preventDefault();
+//         e.preventDefault();
 
-        const reversed = name.split('').reverse().join('');
-        setPara2(reversed);
+//         const reversed = name.split('').reverse().join('');
+//         setPara2(reversed);
         
 
-    }
-
-
-
-    return (
-
-        <>
-            <form onSubmit={next} >
-
-                <input type="text" value={name} onChange={(e) => 
-                setPara(e.target.value)} 
-                placeholder='Enter firstname name' />
-
-
-            </form>
-
-
-            <h2>{btn}</h2>
-        </>
-
-
-    )
-
-
-
-
-
-}
-
-
-
-
-
-
-export default App
-
-
-
-
-// import { useState } from 'react'
-// import './App.css'
-
-// function App() {
-//     const [name, setName] = useState("");
-//     const [reversedName, setReversedName] = useState("");
-
-//     function handleChange(e) {
-//         const inputValue = e.target.value;
-//         setName(inputValue);
-//         setReversedName(inputValue.split('').reverse().join(''));
 //     }
 
+
+
 //     return (
+
 //         <>
-//             <input 
-//                 type="text" 
-//                 value={name} 
-//                 onChange={handleChange} 
-//                 placeholder='Enter first name' 
-//             />
-//             <h2>{reversedName}</h2>
+//             <form onSubmit={next} >
+
+//                 <input type="text" value={name} onChange={(e) => setPara(e.target.value)} placeholder='Enter firstname name' />
+
+
+//             </form>
+
+
+//             <h2>{btn}</h2>
 //         </>
-//     );
+
+
+//     )
+
+
+
+
+
 // }
 
-// export default App;
+
+
+
+
+
+// export default App
+
+
+
+
+import { useState } from 'react'
+import './App.css'
+
+function App() {
+    const [name, setName] = useState("");
+    const [reversedName, setReversedName] = useState("");
+
+    function handleChange(e) {
+        const inputValue = e.target.value;
+        setName(inputValue);
+        setReversedName(inputValue.split('').reverse().join(''));
+    }
+
+    return (
+        <>
+            <input 
+                type="text" 
+                value={name} 
+                onChange={handleChange} 
+                placeholder='Enter first name' 
+            />
+            <h2>{reversedName}</h2>
+        </>
+    );
+}
+
+export default App;
 
 
 
